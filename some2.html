@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopNow - Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"h&d></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#customer-details">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to h&d</h1>
+    <p>Quality products at unbeatable prices.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="product-grid">
+    <div class="product">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQKqOhVD2c-LqNh4qil98tucaYew4F6jOPJlg4gW_luhMUv1GZ9qx2Qn28YxhBzC16YdJm9V8D7BOqB0RLas_K1q6scy71GfUAQFjS3ZbLx7YwC3oaxc7fwWRSOkgUcHRBQ3K61xdBB6g&usqp=CAc" alt="Product 1">
+      <h3>Summer Dress</h3>
+      <p>1200</p>
+      <button onclick="addToCart('Summer Dress', 1200)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS8lvBiepjoBSxt_J9kyUw3cfhGmMVdu6tpCtEJIQUB1T-0wYIPreck33tY8mlFFZG7SP80PL5qShWtCn2g1E26dh2aV82rVnIcSKnUovrPqpLaYiJdxQzDWBCSb14o9t4r6QhscBA&usqp=CAc" alt="Product 2">
+      <h3>Jeans</h3>
+      <p>2000</p>
+      <button onclick="addToCart('Jeans', 2000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61cvSvbapvL.jpg" alt="Product 3">
+      <h3>Jewellery</h3>
+      <p>350</p>
+      <button onclick="addToCart('Jewellery', 350)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTP1Gm2Hem9RdBgzqVmTYf2-kfDB3ABcmJWZxDoLhxTX2L0oImxOGmsExEezwBqrZXvolMa6EOv3DDPI3BDof5rbSVxWNZRkebMxsAAGDabtv3zZNOue7lxYw" alt="Product 4">
+      <h3>Sneakers</h3>
+      <p>2000</p>
+      <button onclick="addToCart('Sneakers', 2000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5dK3QpyxZtLO_7EoIX6egV5KlgLjQdjtL9Fi_xKyY4B3EY90KCxv_NbFXzRP13q3sVG1BlpiFel_pooLRlPzd8_wZx_MLLqK_38QuQUeAw4vpyLsFAs9U&usqp=CAc" alt="Product 5">
+      <h3>Necklace</h3>
+      <p>200</p>
+      <button onclick="addToCart('Necklace', 200)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkLGVKUY5MJXWDeSsxZTYhsrAGPSDUV6hZGg&s" alt="Product 6">
+      <h3>Bracelets</h3>
+      <p>400</p>
+      <button onclick="addToCart('Bracelets', 400)">Add to Cart</button>
+    </div>
+
+      <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61qecVf4paL._AC_UY1100_.jpg" alt="Product 7">
+      <h3>Rings</h3>
+      <p>100</p>
+      <button onclick="addToCart('Rings', 100)">Add to Cart</button>
+    </div>
+
+    </section>
+
+  <!-- Customer Details Form -->
+  <section id="customer-details" class="form-section">
+    <h2>Enter Your Details</h2>
+    <form id="checkout-form">
+      <input type="text" id="name" placeholder="Full Name" required><br>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="text" id="address" placeholder="Address" required><br>
+      <input type="text" id="city" placeholder="City" required><br>
+      <input type="text" id="zipcode" placeholder="Zip Code" required><br>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ShopNow. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
